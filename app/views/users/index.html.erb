@@ -1,6 +1,20 @@
+<header>
+    <div class="apple2">
+      <img src="/assets/mask.png" class="hoge", size: '200x200'>
+    </div>
+</header> 
+
  <% @users.each do |u| %>
 <div class="user-in">
-    <p><%= u.name %>さん</p>
-    <p><%= link_to 'ユーザーページへ', user_path(u.id) %></p>
+    <div class="center"><%= image_tag u.image_url, size: "20x20" if u.image? %></div>
+    <%= u.name %>さん
+    <%= link_to 'ユーザーページへ', user_path(u.id) %>
 </div>
 <% end %>
+
+<footer>
+    <a class="fa-solid fa-house" href="../users"><p class="banana">HOME</P></a>
+    <a class="fa-regular fa-comment-dots" href="../users"><p class="banana">Message</P></a>
+    <a class="fa-solid fa-ice-cream" href="../users"><p class="banana">Ice Break</P></a>
+    <a class="fa-regular fa-circle-user" href="../users"><p class="banana">Mentor</P></a>
+</footer>

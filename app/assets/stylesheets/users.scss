@@ -1,3 +1,115 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+@media screen and (max-width:480px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+      }
+
+    header{
+        background: linear-gradient(180deg, #C84E89 1.67%, #E05880 55.08%, #F15F79 98.89%);
+        height: 100px;
+    }
+
+    .apple{
+        display: flex;
+        flex-direction: row;
+        padding-top: 40px;
+        padding-left: 10px;
+    }
+
+    .apple2{
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        padding-left: 10px;
+    }
+
+    .hoge1{
+        width: 15%;
+        height: 45px;
+    }
+
+    h1{
+        font-family: 'Kalam', cursive;
+        color: rgb(240, 240, 240);
+        margin-left: 6px;
+        margin-top: 7px;
+        font-size: 25px;
+    }
+
+    .all{
+        background-color: #F0F1F2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .next{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 85%;
+        padding:3%;
+        background-color: white;
+        height: 540px;
+    }
+
+    .btn-gradient-radius {
+        display: inline-block;
+        padding: 7px 20px;
+        border-radius: 25px;
+        text-decoration: none;
+        color: #FFF;
+        background-color: black;
+        border: solid 2px #000000;
+      }
+      
+      .btn-gradient-radius:hover {
+        background-color: white;
+        border: solid 2px #000000;
+        color: black;
+      }
+
+	.user-in {
+		width: 100%;
+		margin: 15px 0px 10px 10px;
+        display: flex;
+        align-items: center;
+	}
+
+    .center {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border-radius: 50%;
+        border: 1px solid #000000;
+        margin-right: 10px;
+      }
+
+      .fa-clipboard {
+        color:#CD5087;
+    }
+
+    b{
+        color: #CD5087;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 29px;
+        letter-spacing: 0.035em;
+        margin-left: 2%;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    p{
+        font-size: 10px;
+        color: #06445E;
+        font-weight: bold;
+    }
+
+    .picture{
+        display: flex;
+        justify-content: space-around;
+    }
+}
